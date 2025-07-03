@@ -1,8 +1,6 @@
 package router
 
 import (
-	"net/http"
-
 	"github.com/arturrpereira/go-api/handler"
 	"github.com/gin-gonic/gin"
 )
