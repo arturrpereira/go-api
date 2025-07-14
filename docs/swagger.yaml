@@ -154,4 +154,23 @@ paths:
       summary: Create opening
       tags:
       - Openings
+  /openings:
+    get:
+      consumes:
+      - application/json
+      description: List all job openings
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.CreateOpeningResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.ErrorResponse'
+      summary: List opening
+      tags:
+      - Openings
 swagger: "2.0"
